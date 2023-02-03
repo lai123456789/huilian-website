@@ -1,0 +1,529 @@
+@mainColor: #0299FB;
+.about {
+  .main__frame{
+    width: 100%;
+    position: relative;
+    background: #FFF;
+    
+    .bannar {
+      justify-content: center;
+      width: 100%;
+      height: 41.5vw;
+      background-image: url(../../assets/img/about/indexBg.jpg);
+      background-size: 100% 100%; //cover
+      display: flex;
+      align-items: center;
+      .bannar-container{
+        .bannar-content{
+          color: #fff;
+          text-align: center;
+
+          width: 100%;
+          max-height: 600px;
+          .bannar1{
+            font-weight: 400;
+            p:nth-child(1){
+              font-size: 0.84rem;
+            }
+            p:nth-child(2){
+              font-size: 0.21rem;
+              padding-top: 1.2rem;
+              padding-bottom: 1.2rem;
+              width: 15.79rem;
+              text-align: left;
+              line-height: 0.3rem;
+            }
+          }
+          .bannar2{
+            font-size: 0.26rem;
+            margin-bottom: 0.86rem;
+          }
+          .bannar3{
+            font-size: 0.18rem;
+            text-align: center;
+            width: 70%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+
+    .about_frame_code {
+      font-size: 0.47rem;
+      font-family: PingFang SC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #333333;
+      margin-bottom: 1rem;
+      line-height: 0.75rem !important;
+      text-align: center;
+      padding-top: 1.5rem;
+    }
+    .company_introduction{
+      background-color: white;
+      padding-bottom: 1rem;
+      .about_frame{ .about_frame_code; }
+      .introduct_content{
+        text-align: center;
+        .introduct_content_col{
+          display: flex;
+          justify-content: center;
+          .introduct_text{
+            p{
+              text-indent: 2em;
+              text-align: left;
+              line-height: 0.35rem;
+              font-size: 0.17rem;
+            }
+          }
+          .introduct_img{
+            width: 2.79rem;
+            height: 4.17rem;
+            margin-left: 0.26rem;
+          }
+        }
+      }
+      .introduct_content_img{
+        margin-top: 0.53rem;
+        .img_item1{
+          background-image: url(../../assets/img/about/introduct_text_bg.png);
+        }
+        .img_item2{
+          background-image: url(../../assets/img/about/introduct_text_bg.png);
+        }
+        .img_item3{
+          background-image: url(../../assets/img/about/introduct_text_bg.png);
+        }
+        .img_item4{
+          background-image: url(../../assets/img/about/introduct_text_bg.png);
+        }
+        .introduct_content_img_item{
+          background-size: 100% 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 0.5rem;
+          // height: 1.87rem;
+          // width: 3.85rem;
+          .introduct_content_img_item_left{
+            div:nth-child(1){
+              font-size: 0.32rem;
+              font-weight: 600;
+              margin-bottom: 0.08rem;
+            }
+            div:nth-child(2){
+              p{
+                font-size: 0.16rem;
+              }
+            }
+          }
+          .introduct_content_img_item_right{
+            height: 1.05rem;
+            width: 1.05rem;
+            margin-top: 0.3rem;
+          }
+        }
+      }
+    }
+    .company_culture{
+      background-image: url(../../assets/img/about/culture_bg.png);
+      background-size: 100% 100%;
+      .about_frame{ .about_frame_code; }
+      .company_culture_content{
+        padding-bottom: 2.6rem;
+        .company_culture_item{
+          background: linear-gradient(358deg, #ECF6FF 0%, #FFFFFF 100%);
+          box-shadow: 0rem 0.12rem 0.32rem 0rem rgba(2,153,251,0.05);
+          border-radius: 0.11rem;
+          height: 4.64rem;
+          width: 100%;
+          text-align: center;
+          img{
+            height: 2.11rem;
+            margin-top: 0.5rem;
+          }
+          .company_culture_text{
+            .company_culture_text_title{
+              font-size: 0.32rem;
+              font-weight: bold;
+            }
+            .company_culture_text_line{
+              width: 0.53rem;
+              margin: 0.24rem auto;
+              height: 3px;
+              background-color: #0299FB;
+            }
+            .company_culture_text_desc{
+              p{
+                font-size: 0.21rem;
+                line-height: 0.25rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .growth_story{
+      background-image: url(../../assets/img/about/growth_bg.png);
+      background-size: 100% 100%;
+      .about_frame{ .about_frame_code; }
+      .growth_story_text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2rem 0;
+        .yuan{
+          width: 0.11rem;
+          height: 0.11rem;
+          background: #0299FB;
+          margin-right: 0.06rem;
+          border-radius: 50%;
+        }
+        .year{
+          font-size: 1.26rem;
+          margin-right: 0.5rem;
+        }
+        .value{
+          font-size: 0.32rem;
+        }
+      }
+      .developYears {
+        height: 200px;
+        position: relative;
+        z-index: 1;
+        padding-top: 100px;
+        overflow: hidden;
+        .line {
+          position: absolute;
+          width: 94%;
+          height: 2px;
+          background: #DEDCDC;
+          z-index: 2;
+          left: 39px;
+        }
+        .icon_left{
+          width: 68px;
+          height: 68px;
+          position: absolute;
+          left: -10px;
+          top: 72px;
+          z-index: 2;
+          cursor: pointer;
+        }
+        .icon_right{
+          width: 68px;
+          height: 68px;
+          position: absolute;
+          right: -9px;
+          top: 72px;
+          z-index: 2;
+          cursor: pointer;
+        }
+    
+        .dotList {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          position: absolute;
+          top: 38px;
+          padding: 0 30px;
+          .nullBox {
+            width: 35px;
+            height: 80px;
+          }
+
+          .dotNo {
+            position: relative;
+            text-align: center;
+            z-index: 3;
+    
+            dl {
+              cursor: pointer;
+              dt {
+                img {
+                  // width: 42px;
+                  width: .36rem;
+                  height: 0.2rem;
+                  position: absolute;
+                  top: 48px;
+                  left: 11px;
+                }
+              }
+    
+              dd {
+                font-size: 18px;
+                font-family: "FZKTK--GBK1-0", "FZKTK--GBK1";
+                font-weight: normal;
+                line-height: 20px;
+                letter-spacing: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .qualification_certificate{
+      .about_frame{ .about_frame_code; }
+      .certificate_swiper{
+        .swiper-button-prev:after,.swiper-button-next:after{
+          content: none;
+        }
+        /deep/.swiper-pagination-bullet-active{
+          background: @mainColor;
+        }
+      }
+    }
+
+    .contact_us{
+      margin-bottom: 1rem;
+      .about_frame{ .about_frame_code; }
+      .contact_us_content{
+        .address {
+          width: 100%;
+          // height: 100%;
+          height: 7rem;
+          border-radius: 12px;
+          // border: 2px solid rgb(229, 228, 228);
+          object-fit: cover;
+        }
+        .contact_us_content_text{
+          box-shadow: 0rem 0.01rem 0.32rem 0rem rgba(2,153,251,0.1);
+          border-radius: 0.11rem;
+          opacity: 1;
+          background: #FFFFFF;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding-left: 0.4rem;
+          padding-right: 1rem;
+          width: 100%;
+          margin-top: 0.6rem;
+          .contact_us_content_text_left{
+            div:nth-child(1){
+              padding-top: 0.4rem;
+            }
+            div{
+              display: flex;
+              align-items: center;
+              margin-bottom: 0.4rem;
+              img{
+                margin-right: 0.34rem;
+                width: 0.53rem;
+                height: 0.53rem;
+              }
+              span{
+                font-size: 0.32rem;
+                font-weight: 600;
+              }
+            }
+          }
+          .contact_us_content_text_right{
+            display: flex;
+            .contact_us_content_text_right_item{
+              text-align: center;
+              margin-right: 0.4rem;
+              img{
+                width: 1.5rem;
+                height: 1.5rem;
+              }
+              div{
+                font-size: 0.26rem;
+                margin-top: 0.2rem;
+                font-weight: 600;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 移动端样式代码
+@media (max-width: 768px){
+  .about{
+    .main__frame{
+      .bannar{
+        height: 6.82rem;
+        background-image: url(../../assets/img/about/indexBg_mobile.jpg);
+        .bannar-container{
+          .bannar-content{
+            .bannar1{
+              margin-top: 0.5rem;
+              p:nth-child(1){
+                font-size: 0.48rem;
+              }
+              p:nth-child(2){
+                font-size: 0.28rem;
+                width: 90%;
+                margin: 0 auto;
+                line-height: 0.38rem;
+              }
+            }
+            .bannar2{
+              font-size: 0.48rem;
+              margin-bottom: 2.08rem;
+            }
+            .bannar3{
+              font-size: 0.44rem;
+              text-align: center;
+              width: 70%;
+              margin: 0 auto;
+              // line-height: 0.4rem;
+            }
+          }
+        }
+      }
+      .mask_bg{
+        background-image: url('../../assets/img/customerCaseBg_mobile.png');
+        top: 0;
+        height: 7.2rem;
+      }
+
+      .company_introduction{
+        padding-bottom: 0;
+        .about_frame{
+          padding-top: 0.45rem;
+          margin-bottom: 0.72rem;
+          font-size: 0.32rem;
+        }
+        .introduct_content{
+          .introduct_content_col{
+            padding: 0 0.25rem;
+            .introduct_text{
+              p{
+                font-size: 0.24rem;
+                line-height: 0.61rem;
+              }
+            }
+          }
+        } 
+        
+        .introduct_content_img{
+          margin-top: 0.4rem;
+          .introduct_content_img_item{
+            // height: 1.4rem;
+            // width: 3.2rem;
+            position: relative;
+            padding: 0.5rem 0.1rem;
+            .introduct_content_img_item_left{
+              padding-left: 0.4rem;
+              white-space: nowrap;
+              // z-index: 2;
+              div:nth-child(1){
+                font-size: 0.32rem;
+              }
+              div:nth-child(2){
+                p{
+                  font-size: 0.2rem;
+                }
+              }
+            } 
+            .introduct_content_img_item_right{
+              height: 0.7rem;
+              width: 0.7rem;
+              // margin-right: 0.3rem;
+              position: absolute;
+              right: 25px;
+              bottom: 22px;
+            }
+          }
+        }
+      } 
+
+      .growth_story{
+        background-image: url(../../assets/img/about/growth_bg_mobile.png);
+        .about_frame{
+          font-size: 0.32rem;
+          margin-top: 1rem;
+          padding-top: 0.5rem;
+        }
+        .growth_story_text{
+          margin: 0;
+          padding-top: 1rem;
+          .year{
+            font-size: 0.96rem;
+          }
+          .value{
+            font-size: 0.24rem;
+          }
+        } 
+        .developYears .dotList .dotNo dl dt img{
+          top: 55px;
+          width: 0.27rem;
+          height: 0.15rem;
+        }
+        .developYears .line{
+          width: 80%;
+        }
+        .developYears .dotList .dotNo dl dd{
+          font-size: 0.24rem;
+        }
+      }
+      .qualification_certificate{
+        .about_frame{
+          font-size: 0.32rem;
+          margin-bottom: 0.7rem;
+          padding-top: 0;
+        }
+        .certificate_swiper{
+          img{
+            width: 1.29rem;
+            height: 1.64rem;
+          }
+          .swiper-button-prev,.swiper-button-next{
+            img{
+              width: 0.3rem;
+              height: 0.3rem;
+            }
+          }
+          .swiper-pagination{
+            bottom: 0;
+          }
+          // .swiper-slide{
+          //   margin-right: 0 !important;
+          // }
+        }
+      } 
+
+      .contact_us{
+        .about_frame{
+          font-size: 0.32rem;
+          margin-bottom: 0.7rem;
+          padding-top: 1rem;
+        }
+        .contact_us_content{
+          .address{
+            height: 5.44rem;
+            border-radius: 0;
+          }
+          .contact_us_content_text{
+            padding-right: 0;
+            .contact_us_content_text_left{
+              div{
+                img{
+                  margin-right: 0.2rem;
+                  width: 0.4rem;
+                  height: 0.4rem;
+                }
+                span{
+                  font-size: 0.24rem;
+                }
+              }
+            }
+            .contact_us_content_text_right .contact_us_content_text_right_item img{
+              width: 0.8rem;
+              height: 0.8rem;
+            }
+            .contact_us_content_text_right .contact_us_content_text_right_item div{
+              font-size: 0.2rem;
+            }
+            .contact_us_content_text_right .contact_us_content_text_right_item{
+              margin-right: 0.2rem;
+            }
+          }
+        }
+      } 
+    }
+  }
+}

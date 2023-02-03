@@ -1,0 +1,110 @@
+.application{
+  .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    max-width: 1000px;
+    img{
+      width: 1.73rem;
+      height: 0.56rem;
+    }
+
+  }
+  .content{
+    background-image: url(../../assets/img/application_bg.png);
+    background-size: 100% 100%;
+    height: calc(100vh - 85px);
+    width: 100%;
+    .content_item{
+      height: 100%;
+      .content_left{
+        text-align: center;
+        p:nth-child(1){
+          font-size: 0.43rem;
+          padding-bottom: 0.5rem;
+        }
+        p:nth-child(2),p:nth-child(3){
+          font-size: 0.3rem;
+        }
+        p:nth-child(3){
+          margin-top: 0.87rem;
+        }
+      }
+      .content_right,.content_right_success{
+        padding: 0.5rem;
+        background-color: #FFF;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        .content_right_title{
+          font-size: 0.43rem;
+          margin-bottom: 0.5rem;
+        }
+        .mobile_application_title{
+          font-size: 0.96rem;
+        }
+        .read{
+          margin: 0.3rem 0;
+          span{
+            font-size: 0.11rem;
+          }
+          .active{
+            color: #0299FB;
+          }
+        }
+      }
+      .content_right_success{
+        @keyframes example {
+          from {transform: rotateY(180deg);}
+          to {transform: rotateY(0deg);}
+        }
+        animation-name: example;
+        animation-duration: 2s;
+
+        height: 6.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        div:nth-child(1){
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img{
+            width: 0.53rem;
+            height: 0.53rem;
+            margin-right: 0.2rem;
+          }
+          span{
+            font-size: 0.43rem;
+          }
+        }
+        div:nth-child(2){
+          margin-top: 0.3rem;
+          font-size: 0.2rem;
+        }
+      }
+    }
+  }
+}
+
+// 移动端样式代码
+@media (max-width: 768px){
+  .application{
+    .content{
+      background-image: none;
+      .content_item{
+        .content_right,.content_right_success{
+          width: 100%;
+          .mobile_application_title{
+            font-size: 0.48rem;
+            margin-bottom: 0.7rem;
+          }
+          .read span{
+            font-size: 0.22rem;
+          }
+        }
+      }
+    }
+  }
+}

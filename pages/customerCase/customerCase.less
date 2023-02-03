@@ -1,0 +1,150 @@
+.customerCase{
+  .main__frame{
+    width: 100%;
+    position: relative;
+    background: #FFF;
+    
+    .bannar {
+      width: 100%;
+      // height: 41.5vw;
+      display: flex;
+      align-items: center;
+      .bannar-container{
+        width: 100%;
+        .bannar-content{
+          color: #333;
+          text-align: center;
+
+          width: 100%;
+          // max-height: 600px;
+          .bannar1{
+            padding-bottom: 0.8rem;
+            p:nth-child(1){
+              font-size: 0.84rem;
+              padding-top: 1.2rem;
+              padding-bottom: 1.2rem;
+            }
+            p:nth-child(2){
+              font-size: 0.37rem;
+            }
+          }
+          .bannar2{
+            padding-top: 0.85rem;
+            padding-bottom: 1rem;
+            .bannar2_tabs_label{
+              font-size: 0.26rem;
+              margin-left: 0.8rem;
+            }
+            /deep/.el-tabs__active-bar{
+              margin-left: 0.4rem;
+            }
+            .bannar2_tabs_content{
+              padding: 0.8rem 0.4rem 0;
+              .bannar2_tabs_item:hover{
+                box-shadow: 0px 0px 15px 8px #eee;
+                transform: translateY(-20px);
+              }
+              .bannar2_tabs_item{
+                margin-bottom: 0.5rem;
+                box-shadow: 0px 0px 15px 4px #eee;
+                border-radius: 10px;
+                cursor: pointer;
+                img{
+                  width: 100%;
+                  height: 2.53rem;
+                }
+                div{
+                  padding: 0.2rem;
+                  text-align: left;
+                  margin: 0.1rem 0;
+                  p:nth-child(1){
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 0.3rem;
+                    span{
+                      font-size: 0.24rem;
+                      margin-right: 0.2rem;
+                      font-weight: 600;
+                    }
+                  }
+                  p:nth-child(2){
+                    font-size: 0.16rem;
+                    line-height: 0.2rem;
+                  }
+                  p:nth-child(3){
+                    font-size: 0.16rem;
+                    color: #0299FB;
+                    text-align: right;
+                    margin-top: 0.3rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .mask_bg{
+      background-image: url('../../assets/img/customerCaseBg.png');
+      background-size: 100% 100%;
+      position: absolute;
+      top: 1rem;
+      width: 100%;
+      height: 10rem;
+    }
+  }
+}
+
+// 移动端样式代码
+@media (max-width: 768px){
+  .customerCase{
+    .main__frame{
+      .bannar{
+        .bannar-container{
+          .bannar-content{
+            .bannar1{
+              padding-bottom: 0;
+              margin-top: 2rem;
+              p:nth-child(1){
+                font-size: 0.48rem;
+                padding-bottom: 0.3rem;
+                padding-top: 0;
+              }
+              p:nth-child(2){
+                font-size: 0.28rem;
+                margin-top: 0.4rem;
+              }
+            }
+            .bannar2{
+              .bannar2_tabs_content{
+                padding-top: 0.3rem;
+                .bannar2_tabs_item{
+                  img{
+                    height: 3.52rem;
+                  }
+                  div p:nth-child(1){
+                    margin-bottom: 0.15rem;
+                  }
+                  div p:nth-child(1) span{
+                    font-size: 0.26rem;
+                    font-weight: 600;
+                  }
+                  div p:nth-child(2){
+                    font-size: 0.22rem;
+                    line-height: 0.3rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .mask_bg{
+        background-image: url('../../assets/img/customerCaseBg_mobile.png');
+        top: 0;
+        height: 7.2rem;
+      }
+    }
+  }
+}

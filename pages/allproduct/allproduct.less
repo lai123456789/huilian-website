@@ -1,0 +1,221 @@
+.allproduct {
+  .main__frame {
+    width: 100%;
+    position: relative;
+    background: #fff;
+    
+    .bannar {
+      width: 100%;
+      height: 41.5vw;
+      background-image: url(../../assets/img/allProduct/allProductBg.jpg);
+      background-size: 100% 100%;
+      display: flex;
+      align-items: center;
+      .bannar-container{
+        width: 100%;
+        .bannar-content{
+          color: #fff;
+          text-align: center;
+          width: 100%;
+          max-height: 600px;
+          .bannar1{
+            margin-top: 1rem;
+            p{
+              font-size: 0.84rem;
+            }
+            p:nth-child(2){
+              padding: 1rem 0;
+            }
+          }
+          .bannar2{
+            font-size: 0.37rem;
+            margin-bottom: 1rem;
+          }
+          .bannar3{
+            padding-top: 0.45rem;
+            .bannar3_item{
+              // padding-bottom: 1rem;
+              .content_center{
+                text-align: center;
+                margin-bottom: 1rem;
+              }
+              img{
+                width: 0.63rem;
+                height: 0.63rem;
+              }
+              .bannar3_item_div{
+                position: relative;
+                .bannar3_item_div1{
+                  padding-top: 0.2rem;
+                  padding-bottom: 0.11rem;
+                  font-size: 0.26rem;
+                  white-space: nowrap;
+                }
+                .bannar3_item_div2{
+                  font-size: 0.18rem;
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .bg_white_left{
+      background: linear-gradient(127deg, #FFFFFF 0%, #ECF6FF 100%);
+      padding-left: 30px
+    }
+    .bg_white_right{
+      background: linear-gradient(127deg, #ECF6FF 0%, #FFFFFF 100%);
+      padding-left: 30px
+    }
+    .product_introduct{
+      padding-top: 1.42rem;
+      padding-bottom: 2rem;
+      .product_introduct_title {
+        font-size: 0.47rem;
+        font-family: PingFang SC-Semibold, PingFang SC;
+        font-weight: 600;
+        color: #333333;
+        margin-bottom: 1rem;
+        line-height: 0.75rem !important;
+        font-weight: bold;
+        text-align: center;
+      }
+      .product_introduct_content{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        img{
+          // width: 6.68rem;
+          height: 3.53rem;
+          object-fit: contain;
+        }
+        .product_introduct_content_desc_all{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .product_introduct_content_desc{
+          font-size: 0.32rem;
+          margin-bottom: 0.48rem;
+        }
+        .product_introduct_content_desc_item{
+          display: flex;
+          align-items: center;
+          padding-bottom: 0.4rem;
+          div{
+            width: 0.11rem;
+            height: 0.11rem;
+            background: #0299FB;
+            border-radius: 50%;
+            margin-right: 0.15rem;
+          }
+          p{
+            font-size: 0.26rem;
+            white-space: nowrap;
+          }
+        }
+      }
+      .product{
+        // display: flex;
+        // justify-content: center;
+        text-align: center;
+        margin-bottom: 2rem;
+        img{
+          // width: 13.82rem;
+          // height: 7rem;
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+    // 产品亮点
+    .highlights{
+      @keyframes example {
+        from {
+          transform: translate(0px, 60px);
+          opacity: 0;
+        }
+        to {
+          transform: translate(0px, 0px);
+          opacity: 1;
+        }
+      }
+      animation-name: example;
+      animation-duration: 2s;
+    }
+    
+  }
+}
+
+// 移动端样式代码
+@media (max-width: 768px){
+  .allproduct{
+    .main__frame{
+      .bannar{
+        height: 7rem;
+        background-image: url(../../assets/img/allProduct/allProductBgMobile.jpg);
+        .bannar-container{
+          .bannar-content{
+            .bannar1{
+              margin-top: 1.28rem;
+              p{
+                font-size: 0.48rem;
+              }
+              p:nth-child(2){
+                padding: 0.3rem 0;
+                margin-bottom: 0.4rem;
+              }
+            }
+            .bannar2{
+              font-size: 0.24rem;
+              margin-bottom: 0.48rem;
+            }
+            .bannar3{
+              padding-top: 0.45rem;
+              .bannar3_item{
+                img{
+                  width: 0.6rem;
+                  height: 0.6rem;
+                }
+                .bannar3_item_div{
+                  position: relative;
+                  .bannar3_item_div1{
+                    font-size: 0.24rem;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .product_introduct{
+        padding-top: 0.47rem;
+        padding-bottom: 0.4rem;
+        .product_introduct_title{
+          font-size: 0.32rem;
+          margin-bottom: 0.66rem;
+        }
+        .product_introduct_content{
+          display: flex;
+          flex-flow: row wrap;
+          .product_introduct_content_desc_all{
+            order: 2;
+            margin-left: 0.2rem;
+          }
+          .product_introduct_content_desc{
+            font-size: 0.26rem;
+            margin-bottom: 0.3rem;
+          }
+          .product_introduct_content_desc_item p{
+            font-size: 0.22rem;
+          }
+        }
+      }
+      .bg_white_left{
+        padding-left: 0;
+      }
+    }
+  }
+}
